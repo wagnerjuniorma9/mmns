@@ -1,0 +1,51 @@
+/* body {
+    background-color: #42210b;
+}
+
+.icon-rede-social {
+    color: #a08f84;
+    border: solid 1px;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+.logo {
+    max-height: 600px;
+}
+
+.text-footer {
+    color: #d3b75c;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: myriad_regular;
+    src: url('../fonts/Myriad Pro Regular.ttf');
+}
+
+.tt {
+    font-family: myriad_regular;
+    font-size: 250%;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100%;
+    }
+}
+
+.img-icon {
+    display: inline-block;
+    margin-right: 18px;
+} */
+
+/* Header */
+.hdr-head{
+    background-color: #791623;
+    color: #ffff;
+}
+/* Fim Header */

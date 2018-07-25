@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% include "static/head.html" %}
+    <title>Monteiro Nascimento</title>
+</head>
+
+<body>
+
+    <header>
+        {% include "static/header.html" %}
+    </header>
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="container text-center">
+                <img class="logo" src="{% static '/img/vidal.png' %}" alt="">
+
+                <div class="tt" style="color: #f8e7af;" class="">
+                    <p>AGUARDE, SITE EM CONSTRUÇÃO!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="text-footer text-center">
+                    <p> Rua: Lagarto, 1290 - Bairro: Centro | CEP: 49.010-390 | Aracaju-SE | Telefone: 79 2107-9700 | contato@vidal.com.br</p>
+                </div>
+
+                <!-- <div class="text-center">
+                    <div class="icon-rede-social">
+                        <i class="fa fa-instagram circle-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-rede-social">
+                        <i class="fa fa-facebook circle-icon" aria-hidden="true"></i>
+                    </div>
+                </div> -->
+
+                <div class="text-center">
+                    <div class="img-icon">
+                        <a href="#">
+                            <img src="{% static '/img/insta_icon.png' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="img-icon">
+                        <a href="#">
+                            <img src="{% static '/img/face_icon.png' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="margin-top: 10px;" class="container-fluid">
+            <div class="float-right">
+                <div class="float-right">
+                    <img src="{% static '/img/ma9_logo.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        {% include "static/footer.html" %}
+    </footer>
+
+</body>
+
+</html>
