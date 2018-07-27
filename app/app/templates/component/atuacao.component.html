@@ -1,0 +1,16 @@
+{% load static %}
+
+<div class="col-md-4">
+    <div class="card">
+        <img class="card-img-top" src="{% static atuacao.imgUrl %}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{atuacao.titulo}}</h5>
+            <p class="card-text text-center color-828181">{{atuacao.mensagemPequena}}</p>
+        </div>
+        <div class="card-body">
+            <div class="btn-monteiro" data-btn="{{atuacao.link}}">
+                SAIBA MAIS
+            </div>
+        </div>
+    </div>
+</div>

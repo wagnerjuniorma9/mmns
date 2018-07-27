@@ -1,0 +1,18 @@
+{% load static %}
+
+<div class="col-md-4">
+    <div class="card custom">
+        <img class="card-img-top" src="{% static noticia.imgUrl %}" alt="Card image cap">
+        <div class="card-body">
+            <h5 style="color: #7e2830; font-size: 17px;" class="card-title">{{noticia.data}}</h5>
+            <h5 class="card-title">{{noticia.titulo}}</h5>
+            <h5 style="font-style: italic;" class="card-title">{{noticia.tag}}</h5>
+            <p class="card-text color-828181">{{noticia.mensagem}}</p>
+        </div>
+        <div style="padding-top: 0px;" class="card-body">
+        <div class="btn-monteiro noticia" data-btn="{{noticia.link}}">
+                MAIS INFORMAÇÕES
+            </div>
+        </div>
+    </div>
+</div>
