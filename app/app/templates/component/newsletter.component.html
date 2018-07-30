@@ -1,17 +1,48 @@
-<div class="container-fluid" style="background-color: rgb(155, 26, 26);">
+{% load static %}
+
+<div class="container-fluid bg-newsletter" style="background-color: rgb(155, 26, 26);">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="">
                     <h3>Assine a nossa newsletter</h3>
-                    <h5>Nós enviamos apenas atualizações e avisos importantes.</h5>
+                    <h5 style="font-size: 16px;">Nós enviamos apenas atualizações e avisos importantes.</h5>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    <button class="btn btn-primary float-right">Enviar</button>
+                <!-- <div class="news-pai">
+                    <div class="news first">
+                        <i class="fa fa-envelope-o"></i> <span>|</span>
+                    </div>
+                    <div class="news second" contenteditable="true">
+                        wagner.junior@ma9.com.br
+                    </div>
+                    <div class="news news-btn float-right">
+                        SE INSCREVA
+                    </div>
+                </div> -->
+
+                <div class="news-pai">
+                    <!-- <div class="news first">
+                        <i class="fa fa-envelope-o"></i>
+                        <span>|</span>
+                    </div>
+                    <div class="news second" contenteditable="true">
+                        wagner.junior@ma9.com.br
+                    </div> -->
+                    <div class="row">
+                        <div style="padding-top: 3px;" class=" col-md-2 col-5">
+                            <img width="100%" src="{% static 'img/newsletter_foto1.png' %}" alt="">
+                        </div>
+                        <div id="newsletterform" style="padding-top: 5px; color: #b9b9b9;" class=" col-md-7 col-7" contenteditable="true">
+                            digite seu e-mail
+                        </div>
+                        <div class=" col-md-3 col-5">
+                            <a class="btn btn-nws float-right" href="#">SE INSCREVA</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>

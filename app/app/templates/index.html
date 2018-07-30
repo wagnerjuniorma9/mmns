@@ -45,6 +45,29 @@
             </div>
         </div>
 
+        <!-- Equipe -->
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="box-header">
+                    <div class="text-center">
+                        <h3>Equipe</h3>
+                        <div class="borda-pai">
+                            <div class="borda borda-right"></div>
+                            <div class="borda borda-center"></div>
+                            <div class="borda borda-left"></div>
+                        </div>
+                    </div>
+                </div>
+
+                {% include "component/equipe.component.html" %}
+
+            </div>
+        </div>
+        
+        <!-- Fim equipe -->
+
+        <!-- Atuacao -->
         <div class="container-fluid bg-index-2">
             <div class="container">
 
@@ -69,63 +92,13 @@
                 <div class="row">
 
                     <!-- Gerando atuacaoComponent com array vindo da view.py -->
-                    {% for atuacao in atuacaoList %}
-                        {% include "component/atuacao.component.html" with atuacao=atuacao %}
-                    {% endfor %}
-
-                    <!-- <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" src="{% static 'img/atu_foto1.png' %}" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Lei de Família</h5>
-                                <p class="card-text text-center color-828181">O direito de família envolve uma série de assuntos que geralmente são muito pessoais, únicos
-                                    e emocionalmente desafiadores.</p>
-                            </div>
-                            <div class="card-body">
-                                <div class="btn-monteiro" data-btn="bola">
-                                    SAIBA MAIS
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" src="{% static 'img/atu_foto2.png' %}" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Lei de Família</h5>
-                                <p class="card-text text-center color-828181">A custódia de crianças envolve uma série de assuntos que geralmente são muito pessoais, únicos
-                                    e emocionalmente desafiadores.</p>
-                            </div>
-                            <div class="card-body">
-                                <div class="btn-monteiro" data-btn="bola">
-                                    SAIBA MAIS
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" src="{% static 'img/atu_foto3.png' %}" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Lei de Família</h5>
-                                <p class="card-text text-center color-828181">Os acidentes automobilísticos são difíceis de resolver, porque geralmente são inesperados.
-                                    Naquela época você precisa de alguém ...</p>
-                            </div>
-                            <div class="card-body">
-                                <div class="btn-monteiro" data-btn="bola">
-                                    SAIBA MAIS
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                    {% for atuacao in atuacaoList %} {% include "component/atuacao.component.html" with atuacao=atuacao %} {% endfor %}
 
                 </div>
 
                 <div class="text-center box-footer">
                     <div class="btn-custon default">
-                        SAIBA MAIS
+                        VEJA MAIS
                     </div>
                 </div>
 
@@ -134,32 +107,31 @@
 
         {% include "component/newsletter.component.html" %}
 
+        <!-- Noticias -->
         <div class="container-fluid">
-                <div class="container">
-    
-                    <div style="margin-bottom: 70px;" class="box-header">
-                        <div class="text-center">
-                            <h3>ÚLTIMAS NOTÍCIAS</h3>
-                            <div class="borda-pai">
-                                <div class="borda borda-right"></div>
-                                <div class="borda borda-center"></div>
-                                <div class="borda borda-left"></div>
-                            </div>
+            <div class="container">
+
+                <div style="margin-bottom: 70px;" class="box-header">
+                    <div class="text-center">
+                        <h3>ÚLTIMAS NOTÍCIAS</h3>
+                        <div class="borda-pai">
+                            <div class="borda borda-right"></div>
+                            <div class="borda borda-center"></div>
+                            <div class="borda borda-left"></div>
                         </div>
                     </div>
-    
-                    <!-- GERANDO COMONENT ATUACAO -->
-                    <div class="row">
-    
-                        <!-- Gerando atuacaoComponent com array vindo da view.py -->
-                        {% for noticia in noticiasList %}
-                            {% include "component/noticia.component.html" with noticia=noticia %}
-                        {% endfor %}
-    
-                    </div>
-                    
                 </div>
+
+                <!-- GERANDO COMONENT NOTÍCIAS  -->
+                <div class="row">
+
+                    <!-- Gerando NOTÍCIAS Component com array vindo da view.py -->
+                    {% for noticia in noticiasList %} {% include "component/noticia.component.html" with noticia=noticia %} {% endfor %}
+
+                </div>
+
             </div>
+        </div>
 
     </main>
 

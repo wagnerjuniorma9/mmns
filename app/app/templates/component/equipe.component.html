@@ -1,0 +1,107 @@
+{% load static %}
+
+
+<div class="row">
+
+    <div class="col-md-3 eq-main">
+        <div class="eq-header">
+            <img width="100%" class="eq" src="{% static 'img/equipe_foto2.png' %}" alt="">
+        </div>
+        <div class="eq-box">
+            <div class="eq-box-princ">
+                <p>Wagner Junior</p>
+                <p>Advogado Titular</p>
+            </div>
+        </div>
+        <div class="eq-footer text-center">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i> Envie um E-mail
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-3 eq-main">
+        <div class="eq-header">
+            <img width="100%" class="eq" src="{% static 'img/equipe_foto3.png' %}" alt="">
+        </div>
+        <div class="eq-box">
+            <div class="eq-box-princ">
+                <p>Wagner Junior</p>
+                <p>Advogado Titular</p>
+            </div>
+        </div>
+        <div class="eq-footer text-center">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i> Envie um E-mail
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br><br><br>
+
+</div>
+
+<style>
+    .eq-main:hover{
+        margin-top: -20px;
+    }
+    .eq-main:hover .eq-footer {
+        /* display: block; */
+        visibility: visible;
+    }
+    .eq-main:hover .eq-box-princ {
+        background-color: #84878b;
+        border-bottom: solid 4px #791623;
+    }
+
+    .eq-footer {
+        /* display: none; */
+        visibility: hidden;
+    }
+
+    .eq-footer i {
+        cursor: pointer;
+        margin-right: 17px;
+        color: #96968c;
+        /* text-align: center; */
+        font-size: 110%;
+    }
+
+    .eq-footer i:hover {
+        color: #696961;
+    }
+
+    .eq-footer p {
+        color: #96968c;
+    }
+
+    .eq-header {
+        margin-bottom: -65px;
+    }
+
+    .eq-box {
+        text-align: center;
+        padding: 15px;
+        /* background-color: brown; */
+        color: aliceblue;
+        /* border: solid 1px black; */
+    }
+
+    .eq-box p {
+        margin-bottom: 0px;
+    }
+
+    .eq-box-princ {
+        background-color: #791623;
+        border-bottom: solid 4px #84878b;
+        padding: 10px;
+        position: relative;
+    }
+</style>
