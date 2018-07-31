@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% include "static/head.html" %}
+    <title>Monteiro Nascimento</title>
+</head>
+
+<body>
+
+    <header>
+        {% include "static/header.html" %}
+    </header>
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="conainer">
+
+                <div class="box-header">
+                    <div class="text-center">
+                        <h3>Carreira</h3>
+                        <div class="borda-pai">
+                            <div class="borda borda-right"></div>
+                            <div class="borda borda-center"></div>
+                            <div class="borda borda-left"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <style>
+            .carreira-box {
+                padding: 20px;
+                color: rgba(255, 255, 255, 0.829);
+            }
+            .carreira-bg{
+                background-color: #000000b2;
+            }
+            .carreira-box h4{
+                background-color: #791623;
+                padding: 10px;
+                display: inline-block;
+                margin-left: 25px;
+                color: #ffffffd8;
+            }
+        </style>
+
+        <div class="container-fluid bg-carreira-1">
+            <div class="row">
+                <div class="offset-md-8 col-md-4">
+
+                    <div class="carreira-bg">
+                        <div class="carreira-box">
+                            <h4>PRÉ - REQUISITO</h4>
+
+                            <p>- Disposição e vontade de aprender, comprometimento, dinamismo e facilidade de relacionamento.</p>
+                            <p>- Estar matriculado em cursos de Direito reconhecidos pelo MEC entre o 2º ano (4º semestre) e
+                                o 4º ano (8º semestre).</p>
+                            <p>- Comprovação de bom desempenho por meio do histórico acadêmico.</p>
+                            <p>- Excelente comunicação escrita e oral em português e inglês.</p>
+                        </div>
+
+                        <div class="carreira-box">
+                            <h4>ETAPAS DO PROCESSO SELETIVO</h4>
+
+                            <p>1- Aplicação de testes de português e inglês e envio do histórico escolar para avaliação.</p>
+                            <p>2- Debates em grupo sobre temas da atualidade para que você possa demonstrar suas competências
+                                de comunicação e relacionamento interpessoal.</p>
+                            <p>3- Entrevista individual com o RH.</p>
+                            <p>4- Entrevista individual com a área de interesse. Em caso de dúvidas durante o processo seletivo,
+                                entre em contato conosco pelo e-mail talentos@monteironascimento.com.br</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fale Conosco -->
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="box-header">
+                    <div class="text-center">
+                        <h3>Trabalhe Conosco</h3>
+                        <div class="borda-pai">
+                            <div class="borda borda-right"></div>
+                            <div class="borda borda-center"></div>
+                            <div class="borda borda-left"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center m-b-20">
+                    <p class="color-585858">Se deseja trabalhar conosco, por favor preencha o formulário. Boa Sorte!</p>
+                </div>
+
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <!-- <input type="text" class="form-control" id="" placeholder="Assunto"> -->
+                            <select style="color: rgba(190, 190, 190, 0.836);" class="form-control" name="" id="">
+                                <option style="" value="">Area de Atuação</option>
+                                <option value="">option - 0</option>
+                                <option value="">option - 1</option>
+                                <option value="">option - 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="" placeholder="E-mail">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="" placeholder="Telefone">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <textarea class="form-control" name="" id="" rows="6" placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="">Anexe seu Currículo:</label>
+                            <input type="file" class="form-control" id="" placeholder="Enviar Arquivo">
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="text-center m-b-80">
+                    <a style="padding-right: 35px; padding-left: 35px;" onclick="enviarForm(contato)" class="btn btn-nws" href="#">ENVIAR</a>
+                </div>
+
+            </div>
+        </div>
+
+        {% include "component/newsletter.component.html" %}
+
+        <div class="m-b-80"></div>
+
+    </main>
+
+    <footer>
+        {% include "static/footer.html" %}
+    </footer>
+
+</body>
+
+</html>

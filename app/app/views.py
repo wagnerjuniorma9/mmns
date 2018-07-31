@@ -55,5 +55,51 @@ noticiasList = [
     }
 ]
 
+equipeList = [
+    {
+        'imgUrl': 'img/equipe_foto1.png',
+        'facebookLink': '',
+        'googleMaisLink': '',
+        'TwitterLink': '',
+        'email': 'wagner.junior@ma9.com.br',
+        'nome': 'Eduardo Collin',
+        'categoria': 'Advogado Titular'
+    },
+    {
+        'imgUrl': 'img/equipe_foto2.png',
+        'facebookLink': 'http://google.com.br',
+        'googleMaisLink': 'http://google.com.br',
+        'twitterLink': 'http://google.com.br',
+        'email': 'wagnerjunior645@hotmail.com',
+        'nome': 'Maria Alcantara',
+        'categoria': 'Advogado Titular'
+    },
+    {
+        'imgUrl': 'img/equipe_foto3.png',
+        'facebookLink': '',
+        'googleMaisLink': '',
+        'TwitterLink': '',
+        'email': '',
+        'nome': 'Bruno Linhares',
+        'categoria': 'Advogado Titular'
+    },
+    {
+        'imgUrl': 'img/equipe_foto4.png',
+        'facebookLink': '',
+        'googleMaisLink': '',
+        'TwitterLink': '',
+        'email': '',
+        'nome': 'Alberto Braga',
+        'categoria': 'Advogado Titular'
+    }
+]
+
+
 def index(request):
-    return render(request, 'index.html',{'atuacaoList': atuacaoList, 'noticiasList': noticiasList})
+    return render(request, 'index.html',{'atuacaoList': atuacaoList, 'noticiasList': noticiasList, 'equipeList': equipeList})
+
+def contato(request):
+    return render(request, 'contato.html')
+
+def carreira(request):
+    return render(request, 'carreira.html')

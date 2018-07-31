@@ -91,8 +91,12 @@ body {
 
 /* ETC... */
 
+.m-b-80 {
+    margin-bottom: 80px;
+}
+
 .m-b-40 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .m-b-30 {
@@ -341,3 +345,114 @@ body {
     padding: 20px;
 }
 /* fim footer */
+
+/* Equipe */
+.eq-main:hover {
+    margin-top: -20px;
+}
+
+.eq-main:hover .eq-footer {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+}
+
+.eq-main:hover .eq-box-princ {
+    background-color: #84878b;
+    border-bottom: solid 4px #791623;
+}
+
+.eq-footer {
+    /* display: none; */
+    visibility: hidden;
+    transition: opacity 2s ease-out;
+    opacity: 0;
+}
+
+.eq-footer p {
+    cursor: pointer;
+    color: #96968c;
+}
+
+.eq-footer p:hover {
+    cursor: pointer;
+    color: #696961;
+}
+
+.eq-footer i.f {
+    cursor: pointer;
+    margin-right: 17px;
+    color: #96968c;
+    /* text-align: center; */
+    font-size: 110%;
+}
+
+.eq-footer i:hover {
+    color: #696961;
+}
+
+.eq-footer p {
+    color: #96968c;
+}
+
+.eq-footer a{
+    outline: none;
+    text-decoration: none !important;
+    color: #96968c;
+}
+
+.eq-header {
+    margin-bottom: -65px;
+}
+
+.eq-box {
+    text-align: center;
+    padding: 15px;
+    /* background-color: brown; */
+    color: aliceblue;
+    /* border: solid 1px black; */
+}
+
+.eq-box p {
+    margin-bottom: 0px;
+}
+
+.eq-box-princ {
+    background-color: #791623;
+    border-bottom: solid 4px #84878b;
+    padding: 10px;
+    position: relative;
+}
+
+.eq-box .nome {
+    font-size: 19px;
+}
+
+.eq-box .categoria {
+    font-size: 15px;
+}
+
+/* Fim equipe */
+
+/* contato */
+.cont-img-text p{
+    margin-bottom: 7px;
+}
+.cont-img-text{
+    padding: 25px 20px 25px 20px;
+    color: #f5f3f0;
+    margin-top: -300px;
+}
+
+.cont-img-text .menor{
+    font-size: 13px;
+    color: #f5f3f0cc;
+}
+/* Fim Contato */
+
+/* carreita */
+.bg-carreira-1{
+    background-image: url(../img/testando123.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

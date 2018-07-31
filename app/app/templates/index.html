@@ -60,11 +60,16 @@
                     </div>
                 </div>
 
-                {% include "component/equipe.component.html" %}
+                <!-- Equipe component -->
+                <div class="row">
+                    {% for equipe in equipeList %}
+                        {% include "component/equipe.component.html" with equipe=equipe %}
+                    {% endfor %}
+                </div>
 
             </div>
         </div>
-        
+
         <!-- Fim equipe -->
 
         <!-- Atuacao -->
@@ -92,7 +97,9 @@
                 <div class="row">
 
                     <!-- Gerando atuacaoComponent com array vindo da view.py -->
-                    {% for atuacao in atuacaoList %} {% include "component/atuacao.component.html" with atuacao=atuacao %} {% endfor %}
+                    {% for atuacao in atuacaoList %}
+                        {% include "component/atuacao.component.html" with atuacao=atuacao %}
+                    {% endfor %}
 
                 </div>
 
