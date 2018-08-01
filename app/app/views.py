@@ -94,6 +94,21 @@ equipeList = [
     }
 ]
 
+equipe_id = {
+    'imgUrl': 'img/equipe_foto3.png',
+    'msg': 'Obteve seu doutorado em Direito pela Villanova University School of Law em Villanova, Pensilvânia, em 2001. Ele obteve seu diplo\
+            ma de graduação da Denison University em 1998, tendo estudado \
+            Filosofia com ênfase adicional no pensamento político antigo. Enquanto estudava na Faculdade de Direito da Universidade de Villanova, R\
+            obert trabalhou como associado de verão \
+            na Greenberg Traurig, em Los Angeles, Califórnia, e também como editor de artigos externos da Escola de Direito Ambiental da Faculda\
+            de de Direito da Universidade Villanova. Acredita \
+            firmemente que, para poder ter sucesso nesta indústria, você tem que dedicar seu tempo, trabalho e emoções para que os clientes obten\
+            ham o melhor resultado e man\
+            tenham os clientes em um estado de espírito que eles podem confiar.Ele ajudou seus clientes a recuperar mais de US $ 150.000 em vá\
+            rios casos e tem uma taxa de sucesso quase perfeita.',
+    'nome': 'EDUARDO COLLIN'
+}
+
 
 def index(request):
     return render(request, 'index.html',{'atuacaoList': atuacaoList, 'noticiasList': noticiasList, 'equipeList': equipeList})
@@ -106,3 +121,6 @@ def carreira(request):
 
 def sobrenos(request):
     return render(request, 'sobrenos.html')
+
+def equipe(request, id = None):
+    return render(request, 'equipe.html', {'id': id, 'equipeList': equipeList, 'equipe_id': equipe_id})
