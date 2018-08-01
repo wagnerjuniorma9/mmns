@@ -1,0 +1,217 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% include "static/head.html" %}
+    <title>Monteiro Nascimento</title>
+</head>
+
+<body>
+
+    <header>
+        {% include "static/header.html" %}
+    </header>
+
+    <main>
+
+        <div class="container-fluid bg-index-1">
+            <div class="container">
+
+                <div class="box-header">
+                    <div class="text-center">
+                        <h3>MONTEIRO NASCIMENTO</h3>
+                        <div class="borda-pai">
+                            <div class="borda borda-right"></div>
+                            <div class="borda borda-center"></div>
+                            <div class="borda borda-left"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 mn-box-left">
+                        <p>Os clientes nos confiam para ajudá-los a alcançar seus objetivos com suas questões legais para crescer
+                            e nunca assumimos essa confiança como garantida. No lawyero, consideramos que os nossos clientes
+                            são os nossos próprios familiares e proporcionamos-lhes cuidados e aconselhamento que merecem.</p>
+
+                        <p>Caráter, trabalho duro e compaixão! Esses três componentes são os pilares para garantir que prestamos
+                            o melhor serviço aos clientes que representamos. Quer se trate de uma questão de guarda dos filhos
+                            ou de direito da família, estamos aqui para ajudar.</p>
+
+                        <p>Também nos especializamos em acidentes automobilísticos e lesões relacionadas à indústria automotiva
+                            móvel. Você deve ser compensado por qualquer dano que tenha encontrado no trabalho ou por negligência
+                            de outra pessoa. Se você acha que seu caso se enquadra em qualquer uma das categorias acima,
+                            ligue para nós.</p>
+                    </div>
+                    <div class="col-md-4 mn-box">
+                        <div class="text-center">
+                            <h3>NOSSA MISSÃO</h3>
+                        </div>
+                        <div class="">
+                            <p>Nós nunca tomamos essa confiança como garantida. Nós aprendemos as necessidades e expectativas
+                                de nossos clientes; nos comunicamos abertamente; nós acompanhamos freqüentemente; nós respondemos
+                                oportunamente; e estamos sempre disponíveis. Em suma, desenvolvemos um relacionamento com
+                                nossos clientes. As metas de nossos clientes se tornam nossos objetivos. Nós fornecemos uma
+                                representação legal agressiva e profissional a cada cliente, a fim de garantir que o seu
+                                problema seja resolvido da melhor maneira possível.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <style>
+        </style>
+
+        <!-- Escolher-nos -->
+        <div class="container-fluid sbn-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Obtenha a consulta para questões legais mais complexas.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="float-right">
+                            <button class="btn btn-success">CONTATE-NOS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Lado direito textos -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="row">
+                        <img width="100%" src="{% static 'img/bg_header_menor_1.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5 sbn">
+                    <div>
+                        <h3>
+                            PORQUE ESCOLHER-NOS
+                        </h3>
+                    </div>
+                    <div class="sbn-div" style="display: inline-flex;">
+                        <div style="display: inline-block;">
+                            <img width="50px" src="{% static 'img/libra.png' %}" alt="">
+                        </div>
+                        <div style="display: inline-block;">
+                            <h5>ENTENDEMOS A LEI</h5>
+                            <p>Temos ajudado numerosos clientes em suas complicadas questões jurídicas e somos especialistas
+                                nisso.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sbn-div" style="display: inline-flex;">
+                        <div style="display: inline-block;">
+                            <img width="50px" src="{% static 'img/chapeu.png' %}" alt="">
+                        </div>
+                        <div style="display: inline-block;">
+                            <h5>EQUIPE MAIS QUALIFICADA</h5>
+                            <p>Na Monteiro, temos a melhor eqipe que entende seu caso e tenta ajudá~lo a alcançar os resultados
+                                desejados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sbn-div" style="display: inline-flex;">
+                        <div style="display: inline-block;">
+                            <img width="50px" src="{% static 'img/pagodart.png' %}" alt="">
+                        </div>
+                        <div style="display: inline-block;">
+                            <h5>NÓS LEVAMOS AO SUCESSOS</h5>
+                            <p>Nosso objetivo final é ajudá-lo e acreditamos que o cliente é nosso ativo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrousel -->
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="box-header">
+                    <div class="text-center">
+                        <h3>APOIADORES E PARCEIROS DA MONTEIRO NASCIMENTO</h3>
+                        <div class="borda-pai">
+                            <div class="borda borda-right"></div>
+                            <div class="borda borda-center"></div>
+                            <div class="borda borda-left"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-b-80">
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="{% static 'img/graphicriver.png' %}" alt="First slide">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="{% static 'img/photodune.png' %}" alt="First slide">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="{% static 'img/themeforest.png' %}" alt="First slide">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="{% static 'img/videohive.png' %}" alt="First slide">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="{% static 'img/graphicriver.png' %}" alt="First slide">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="{% static 'img/photodune.png' %}" alt="First slide">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="{% static 'img/themeforest.png' %}" alt="First slide">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="{% static 'img/videohive.png' %}" alt="First slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- NEWSLETTER -->
+        {% include "component/newsletter.component.html" %}
+
+        <div class="m-b-40">
+        </div>
+
+    </main>
+
+    <footer>
+        {% include "static/footer.html" %}
+    </footer>
+
+</body>
+
+</html>

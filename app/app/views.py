@@ -103,3 +103,6 @@ def contato(request):
 
 def carreira(request):
     return render(request, 'carreira.html')
+
+def sobrenos(request):
+    return render(request, 'sobrenos.html')

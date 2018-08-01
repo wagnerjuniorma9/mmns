@@ -21,5 +21,6 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^contato$', views.contato, name='contato'),
-    url(r'^carreira$', views.carreira, name='carreira')
+    url(r'^carreira$', views.carreira, name='carreira'),
+    url(r'^sobrenos$', views.sobrenos, name='sobrenos')
 ]

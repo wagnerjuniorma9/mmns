@@ -91,6 +91,15 @@ body {
 
 /* ETC... */
 
+.carousel-indicators .active {
+    background-color: #791623;
+}
+
+.carousel-indicators li {
+    background-color: #888888;
+    bottom: -50px;
+}
+
 .m-b-80 {
     margin-bottom: 80px;
 }
@@ -183,23 +192,26 @@ body {
     margin-bottom: 25px;
 }
 
-.card.custom{
+.card.custom {
     border: none;
     margin-bottom: 40px;
 }
-.card.custom .card-body{
+
+.card.custom .card-body {
     padding-left: 0px;
 }
-.card.custom h5{
+
+.card.custom h5 {
     margin-bottom: 7px;
     color: #575757;
 }
-.card.custom .card-img-top{
+
+.card.custom .card-img-top {
     margin-bottom: 40px;
 }
 
 .bg-index-1 {
-    background-image: url(../img/bg_index_1.png);
+    background-image: url(../img/ggg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -210,7 +222,7 @@ body {
     background-size: cover;
 }
 
-.btn-monteiro.noticia{
+.btn-monteiro.noticia {
     background-color: white;
     padding-left: 0px;
     padding-right: 0px;
@@ -218,7 +230,8 @@ body {
     border-top: solid 3px #791623;
     color: #575757;
 }
-.btn-monteiro.noticia:hover{
+
+.btn-monteiro.noticia:hover {
     color: #791623ab;
 }
 
@@ -230,16 +243,19 @@ body {
 /*  */
 
 /* newsletter */
-.news-pai{
+
+.news-pai {
     background-color: #ffffffff;
     border: solid 1px #585858;
     padding: 6px 3px 6px 3px;
 }
-.news{
+
+.news {
     display: inline-block;
     /* min-height: 43px; */
 }
-.news-btn{
+
+.news-btn {
     background-color: #791623;
     color: #ffffffff;
     border: solid 1px #585858;
@@ -248,19 +264,23 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.news.first{
+
+.news.first {
     color: #585858;
     font-size: 27px;
     margin-left: 15px;
 }
-.news.first span{
+
+.news.first span {
     margin-left: 12px;
     margin-right: 12px;
 }
-.news.second{
+
+.news.second {
     /* width: 70%; */
 }
-.bg-newsletter{
+
+.bg-newsletter {
     background-image: url(../img/bg_newsletter.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -269,17 +289,19 @@ body {
     color: #f2e8e9;
 }
 
-.btn.btn-nws{
+.btn.btn-nws {
     background-color: #791623;
     border-color: #000000;
     color: white;
     border-radius: 0px;
 }
-.btn.btn-nws:hover{
+
+.btn.btn-nws:hover {
     background-color: #61101b;
     border-color: #000000;
     color: white;
 }
+
 /* Fim newsletter */
 
 /* Box */
@@ -335,18 +357,20 @@ body {
     width: 30%;
 }
 
-
 /* Fotter */
-.footer{
+
+.footer {
     background-color: #bdc1c6;
     color: white;
     padding-top: 20px;
     padding-bottom: 15px;
     padding: 20px;
 }
+
 /* fim footer */
 
 /* Equipe */
+
 .eq-main:hover {
     margin-top: -20px;
 }
@@ -395,7 +419,7 @@ body {
     color: #96968c;
 }
 
-.eq-footer a{
+.eq-footer a {
     outline: none;
     text-decoration: none !important;
     color: #96968c;
@@ -435,24 +459,94 @@ body {
 /* Fim equipe */
 
 /* contato */
-.cont-img-text p{
+
+.cont-img-text p {
     margin-bottom: 7px;
 }
-.cont-img-text{
+
+.cont-img-text {
     padding: 25px 20px 25px 20px;
     color: #f5f3f0;
     margin-top: -300px;
 }
 
-.cont-img-text .menor{
+.cont-img-text .menor {
     font-size: 13px;
     color: #f5f3f0cc;
 }
+
 /* Fim Contato */
 
 /* carreita */
-.bg-carreira-1{
+
+.bg-carreira-1 {
     background-image: url(../img/testando123.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* sobrenos */
+
+.mn-box-left {
+    color: #818181;
+    line-height: 30px;
+}
+
+.mn-box {
+    background-color: #827f7f;
+    color: #e6e6e6;
+    padding: 25px;
+    line-height: 35px;
+    margin-bottom: 60px;
+}
+
+.sbn-a {
+    background-color: #791623;
+    color: #ede0e2;
+    padding: 25px 0px 20px 0px;
+}
+
+.sbn-a p {
+    margin-bottom: 0px;
+}
+
+.sbn-a button {
+    background-color: #939292;
+    border-color: #939292;
+    border-radius: 0px;
+}
+
+.sbn-a button:hover {
+    background-color: #6b6b6b;
+    border-color: #6b6b6b;
+}
+
+.sbn {
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.sbn img {
+    margin-right: 10px;
+}
+
+.sbn h3 {
+    margin-bottom: 30px;
+    display: inline-block;
+    border-bottom: solid 3px #791623;
+    padding-bottom: 10px;
+    color: #484848;
+    padding-right: 20px;
+}
+
+.sbn h5 {
+    color: #585858;
+}
+
+.sbn p {
+    color: #636363;
+}
+
+.sbn-div {
+    margin-bottom: 10px;
 }
