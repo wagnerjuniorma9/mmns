@@ -103,11 +103,11 @@
                 <form>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="" placeholder="Nome">
+                            <input required type="text" class="form-control" id="" placeholder="Nome">
                         </div>
                         <div class="form-group col-md-6">
                             <!-- <input type="text" class="form-control" id="" placeholder="Assunto"> -->
-                            <select style="color: rgba(190, 190, 190, 0.836);" class="form-control" name="" id="">
+                            <select required style="color: rgba(190, 190, 190, 0.836);" class="form-control" name="" id="">
                                 <option style="" value="">Area de Atuação</option>
                                 <option value="">option - 0</option>
                                 <option value="">option - 1</option>
@@ -117,27 +117,27 @@
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="" placeholder="E-mail">
+                            <input required type="text" class="form-control" id="" placeholder="E-mail">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="" placeholder="Telefone">
+                            <input required type="text" class="form-control" id="" placeholder="Telefone">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="form-group col-12">
-                            <textarea class="form-control" name="" id="" rows="6" placeholder="Mensagem"></textarea>
+                            <textarea required class="form-control" name="" id="" rows="6" placeholder="Mensagem"></textarea>
                         </div>
                         <div class="form-group col-6">
                             <label for="">Anexe seu Currículo:</label>
-                            <input type="file" class="form-control" id="" placeholder="Enviar Arquivo">
+                            <input required type="file" class="form-control" id="" placeholder="Enviar Arquivo">
                         </div>
                     </div>
 
                 </form>
 
                 <div class="text-center m-b-80">
-                    <a style="padding-right: 35px; padding-left: 35px;" onclick="enviarForm(contato)" class="btn btn-nws" href="#">ENVIAR</a>
+                    <a style="padding-right: 35px; padding-left: 35px;"  onclick="enviarForm(contato)" class="btn btn-nws" href="">ENVIAR</a>
                 </div>
 
             </div>
