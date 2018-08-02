@@ -17,13 +17,13 @@
 
             <div class="float-right">
                 <span style="font-size: 15px; padding-right: 15px;">Redes Sociais:</span>
-                <div class="header-icon paddg">
+                <div class="header-icon paddg pad" data-action="/">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </div>
-                <div class="header-icon paddg">
+                <div class="header-icon paddg pad" data-action="/">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                 </div>
-                <div class="header-icon paddg">
+                <div class="header-icon paddg pad" data-action="/">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </div>
             </div>
@@ -35,7 +35,7 @@
 <div class="container-fluid header-bg">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark transparente">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img width="100%" src="{% static 'img/logo1.png' %}" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -46,28 +46,33 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link header-menu-item" href="sobrenos">Sobre Nós</a>
+                    <a class="nav-link header-menu-item" href="/sobrenos">Sobre Nós</a>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle header-menu-item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle header-menu-item" href="/equipe" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Equipe
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="/equipe">Toda Equipe</a>
+                        <a class="dropdown-item" href="#">Sócios</a>
+                        <a class="dropdown-item" href="#">Advogados</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <a class="dropdown-item" href="#">Estagiários</a>
+                        <a class="dropdown-item" href="#">Paralegais</a>
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link header-menu-item" href="#">Atuação</a>
+                    <a class="nav-link header-menu-item" href="/atuacao">Atuação</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link header-menu-item" href="#">Notícias</a>
+                    <a class="nav-link header-menu-item" href="/noticia">Notícias</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link header-menu-item" href="/contato">Contato</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link header-menu-item" href="/carreira">Carreira</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link disabled" href="#">Disabled</a>
@@ -83,7 +88,10 @@
     <div class="container-fluid main-logo">
         <div class="container">
             <div class="text-center">
-                <h1 style="">“Só engrandeceremos nosso direito à vida,cumprindo o nosso dever de cidadão do mundo”.<br><span class="">(Mahatma Gandhi)</span></h1>
+                <h1 style="">“Só engrandeceremos nosso direito à vida,cumprindo o nosso dever de cidadão do mundo”.
+                    <br>
+                    <span class="">(Mahatma Gandhi)</span>
+                </h1>
             </div>
         </div>
     </div>

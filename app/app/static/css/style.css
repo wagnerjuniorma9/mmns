@@ -19,6 +19,10 @@
     padding-top: 10px;
 }
 
+.pad{
+    cursor: pointer;
+}
+
 .header-icon {
     display: inline-block;
     padding-left: 20px;
@@ -214,6 +218,7 @@ body {
     background-image: url(../img/ggg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .bg-index-2 {
@@ -370,6 +375,10 @@ body {
 /* fim footer */
 
 /* Equipe */
+
+.eq-main{
+    cursor: pointer;
+}
 
 .eq-main:hover {
     margin-top: -20px;
@@ -549,4 +558,40 @@ body {
 
 .sbn-div {
     margin-bottom: 10px;
+}
+
+
+/* Equipe */
+
+.eqp-apresentacao{
+    margin-bottom: 120px;
+}
+.eqp-apresentacao p{
+    color: #636363;
+    line-height: 35px;
+}
+.eqp-apresentacao a{
+    color: #636363;
+    line-height: 35px;
+}
+.eqp-apresentacao a:hover{
+    color: #494949;
+    /* line-height: 35px; */
+}
+.eqp-apresentacao h3{
+    padding-right: 20px;
+    border-bottom: solid 3px #791623;
+    display: inline-block;
+    color: #585858;
+    padding-bottom: 10px;
+}
+.eqp-apresentacao .email{
+    margin-top: 20px;
+    color: #636363c2;
+    cursor: pointer;
+}
+.eqp-apresentacao .email i{
+    margin-right: 10px;
+    font-size: 130%;
+    margin-top: 10px;
 }

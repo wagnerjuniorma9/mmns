@@ -18,11 +18,14 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^contato$', views.contato, name='contato'),
     url(r'^carreira$', views.carreira, name='carreira'),
     url(r'^sobrenos$', views.sobrenos, name='sobrenos'),
     url(r'^equipe$', views.equipe, name='equipe'),
-    url(r'^equipe/(?P<id>[\w-]+)/$', views.equipe, name='equipe')
+    url(r'^equipe/(?P<id>[\w-]+)/$', views.equipe, name='atuacao'),
+    url(r'^atuacao$', views.atuacao, name='equipe'),
+    url(r'^atuacao/(?P<id>[\w-]+)/$', views.atuacao, name='atuacao'),
+    url(r'^noticia$', views.noticia, name='noticia'),
+    url(r'^noticia/(?P<id>[\w-]+)/$', views.noticia, name='noticia')
 ]

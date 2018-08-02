@@ -1,0 +1,89 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% include "static/head.html" %}
+    <title>Monteiro Nascimento</title>
+</head>
+
+<body>
+
+    <header>
+        {% include "static/header.html" %}
+    </header>
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="box-header">
+                    <div class="text-center">
+                        <h3>ATUAÇÃO</h3>
+                        <div class="borda-pai">
+                            <div class="borda borda-right"></div>
+                            <div class="borda borda-center"></div>
+                            <div class="borda borda-left"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- So vai aparecer caso venha id pram da URL -->
+                {% if id %}
+                <div class="row eqp-apresentacao">
+                    <div class="col-md-8">
+                        <h3>{{atuacao_id.categoria}}</h3>
+                        <p>{{atuacao_id.msg}}</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img width="100%" src="{% static atuacao_id.imgUrl %}" alt="">
+                    </div>
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+
+        {% if id %}
+            <!-- Escolher-nos Barra -->
+            {% include "component/contatenos.component.html" %}
+            <div class="m-b-80">
+
+            </div>
+        {% endif %}
+
+        <div class="container-fluid">
+            <div class="container">
+
+                <!-- GERANDO COMONENT ATUACAO -->
+                <div class="row">
+
+                    <!-- Gerando atuacaoComponent com array vindo da view.py -->
+                    {% for atuacao in atuacaoList %} {% include "component/atuacao.component.html" with atuacao=atuacao %} {% endfor %}
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="m-b-40">
+
+        </div>
+
+        <!-- NEWSLETTER -->
+        {% include "component/newsletter.component.html" %}
+
+        <div class="m-b-40">
+        </div>
+
+    </main>
+
+    <footer>
+        {% include "static/footer.html" %}
+    </footer>
+
+</body>
+
+</html>

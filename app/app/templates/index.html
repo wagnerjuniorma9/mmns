@@ -62,9 +62,7 @@
 
                 <!-- Equipe component -->
                 <div class="row">
-                    {% for equipe in equipeList %}
-                        {% include "component/equipe.component.html" with equipe=equipe %}
-                    {% endfor %}
+                    {% for equipe in equipeList %} {% include "component/equipe.component.html" with equipe=equipe %} {% endfor %}
                 </div>
 
             </div>
@@ -97,9 +95,7 @@
                 <div class="row">
 
                     <!-- Gerando atuacaoComponent com array vindo da view.py -->
-                    {% for atuacao in atuacaoList %}
-                        {% include "component/atuacao.component.html" with atuacao=atuacao %}
-                    {% endfor %}
+                    {% for atuacao in atuacaoList %} {% include "component/atuacao.component.html" with atuacao=atuacao %} {% endfor %}
 
                 </div>
 
@@ -134,7 +130,11 @@
                 <div class="row">
 
                     <!-- Gerando NOTÍCIAS Component com array vindo da view.py -->
-                    {% for noticia in noticiasList %} {% include "component/noticia.component.html" with noticia=noticia %} {% endfor %}
+                    {% for noticia in noticiasList %}
+                    <div class="col-md-4">
+                        {% include "component/noticia.component.html" with noticia=noticia %}
+                    </div>
+                    {% endfor %}
 
                 </div>
 

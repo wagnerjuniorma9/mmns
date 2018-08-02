@@ -1,0 +1,130 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% include "static/head.html" %}
+    <title>Monteiro Nascimento</title>
+</head>
+
+<body>
+
+    <header>
+        {% include "static/header.html" %}
+    </header>
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="container">
+
+                <div class="box-header">
+                    <div class="text-center">
+                        <h3>ÚLTIMAS NOTÍCIAS</h3>
+                        <div class="borda-pai">
+                            <div class="borda borda-right"></div>
+                            <div class="borda borda-center"></div>
+                            <div class="borda borda-left"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- So vai aparecer caso venha id param da URL -->
+                {% if id %}
+
+                <style>
+
+                    .not-open-img{
+                        padding-right: 30px;
+                    }
+                    
+                    .not-open-titulo{
+                        display: inline-block;
+                        color: #575757;
+                        padding-right: 30px;
+                        /* padding-bottom: 5px; */
+                        border-bottom: solid 3px #791623;
+                    }
+
+                    .not-open-texto{
+                        color: #9a9a9a;
+                        padding: 25px 15px 25px 0px;
+                    }
+
+                    .not-open-data{
+                        margin-top: 12px;
+                    }
+
+                    .not-open-data p{
+                        color: #8a1a23;
+                    }
+
+                    .not-open-data span{
+                        color: #626262;
+                        font-style: italic;
+                        margin-left: 10px;
+                    }
+
+                    .not-open-footer a{
+                        color: #575757;
+                    }
+
+                </style>
+
+                <div class="row">
+                    <div class="col-md-7">
+
+                        <div class="not-open-img">
+                            <img width="100%" src="{% static noticia_id.imgUrl %}" alt="">
+                        </div>
+                        <div class="not-open-data">
+                            <p>{{noticia_id.data}} <span>{{noticia_id.tag}}</span> </p>
+                        </div>
+                        <div class="not-open-titulo">
+                            <h3>{{noticia_id.titulo}}</h3>
+                        </div>
+                        <div class="not-open-texto">
+                                {% autoescape off %} {{noticia_id.msg}} {% endautoescape %}
+                        </div>
+                        <div class="not-open-footer">
+                            <a href="#"> <i class="fa fa-long-arrow-left" aria-hidden="true"></i> VOLTAR</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        
+                            <!-- Gerando NOTÍCIAS Component com array vindo da view.py -->
+                            {% for noticia in noticiasList %}
+                                {% include "component/noticia.component.html" with noticia=noticia %}
+                            {% endfor %}
+                        
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Apenas um desses será executado -->
+
+                <!-- Caso nao venha o id apenas renderizar o component noticia-->
+                {% if not id %}
+                <div class="row">
+                    <!-- Gerando NOTÍCIAS Component com array vindo da view.py -->
+                    {% for noticia in noticiasList %}
+                    <div class="col-md-4">
+                        {% include "component/noticia.component.html" with noticia=noticia %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        {% include "static/footer.html" %}
+    </footer>
+
+</body>
+
+</html>

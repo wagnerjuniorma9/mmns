@@ -29,39 +29,14 @@
                         </div>
                     </div>
                 </div>
-
-                <style>
-                    .eqp-apresentacao{
-                        margin-bottom: 120px;
-                    }
-                    .eqp-apresentacao p{
-                        color: #636363;
-                        line-height: 35px;
-                    }
-                    .eqp-apresentacao h3{
-                        padding-right: 20px;
-                        border-bottom: solid 3px #791623;
-                        display: inline-block;
-                        color: #585858;
-                        padding-bottom: 10px;
-                    }
-                    .eqp-apresentacao .email{
-                        margin-top: 20px;
-                        color: #636363c2;
-                        cursor: pointer;
-                    }
-                    .eqp-apresentacao .email i{
-                        margin-right: 10px;
-                        font-size: 130%;
-                    }
-                </style>
-
-                <!-- So vai aarecer caso venha id pram da URL -->
+                
+                <!-- So vai aparecer caso venha id pram da URL -->
                 {% if id %}
                     <div class="row eqp-apresentacao">
                         <div class="col-md-4 text-center">
                             <img width="100%" src="{% static equipe_id.imgUrl %}" alt="">
-                            <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>Envie um Email</p>
+                            <!-- <p class="email"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Envie um Email</a></p> -->
+                            <a class="email" href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Envie um Email</a>
                         </div>
                         <div class="col-md-8">
                             <h3>{{equipe_id.nome}}</h3>

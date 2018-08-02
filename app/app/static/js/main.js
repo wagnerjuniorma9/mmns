@@ -3,7 +3,20 @@ const PLACE_HOLDER_NEWSLETTER = "digite seu e-mail"
 
 $(document).ready(function () {
 
-    //Realizar execucao de funcoes com custon button
+    // Botao de equipe
+    $(".eq-main").click(function (element) {
+        let url = this.getAttribute("data-action")
+        //alert(url)
+        window.location.href = url
+    })
+
+    // Botao de instagram face google Redes Sociais no Header
+    $(".pad").click(function (element) {
+        let url = this.getAttribute("data-action")
+        window.location.href = url
+    })
+
+    // Realizar execucao de funcoes com custon button
     $(".btn-monteiro").click(function (element) {
         console.log(this.getAttribute('data-btn'))
     })
